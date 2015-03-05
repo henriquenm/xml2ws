@@ -1,19 +1,55 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (3.2.21)
+      i18n (~> 0.6, >= 0.6.4)
+      multi_json (~> 1.0)
+    akami (1.2.2)
+      gyoku (>= 0.4.0)
+      nokogiri
+    builder (3.2.2)
     coderay (1.1.0)
+    gyoku (1.2.2)
+      builder (>= 2.1.2)
+    httpi (2.3.0)
+      rack
+    i18n (0.7.0)
+    libxml-ruby (2.4.0)
+    macaddr (1.7.1)
+      systemu (~> 2.6.2)
     method_source (0.8.2)
     mini_portile (0.6.2)
+    multi_json (1.11.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    nori (2.4.0)
     openssl (1.0.0.beta)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    rack (1.6.0)
+    rxsd (0.5.2)
+      activesupport (~> 3.2.11)
+      libxml-ruby (~> 2.4.0)
+    savon (2.10.0)
+      akami (~> 1.2)
+      builder (>= 2.1.2)
+      gyoku (~> 1.2)
+      httpi (~> 2.3)
+      nokogiri (>= 1.4.0)
+      nori (~> 2.4)
+      uuid (~> 2.3.7)
+      wasabi (~> 3.4)
     signer (1.4.2)
       nokogiri (>= 1.5.1)
     slop (3.6.0)
+    systemu (2.6.4)
+    uuid (2.3.7)
+      macaddr (~> 1.0)
+    wasabi (3.4.0)
+      httpi (~> 2.0)
+      nokogiri (>= 1.4.2)
 
 PLATFORMS
   ruby
@@ -21,4 +57,6 @@ PLATFORMS
 DEPENDENCIES
   openssl (~> 1.0.0.beta)
   pry
+  rxsd
+  savon (~> 2.0)
   signer
