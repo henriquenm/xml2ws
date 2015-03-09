@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
-gem 'openssl', '~> 1.0.0.beta'
+gem 'openssl'
 gem 'signer'
-gem 'pry'
-gem 'savon', '~> 2.0'
-gem 'rxsd'
+gem 'savon'
