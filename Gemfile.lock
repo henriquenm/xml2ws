@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:henriquenm/signer.git
+  revision: 93b57715038170dcd7ff4f3943acdb78e4c3f27d
+  specs:
+    signer (1.4.2)
+      nokogiri (>= 1.5.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,8 +56,6 @@ GEM
       nori (~> 2.4)
       uuid (~> 2.3.7)
       wasabi (~> 3.4)
-    signer (1.4.2)
-      nokogiri (>= 1.5.1)
     systemu (2.6.5)
     ttfunk (1.1.1)
     uuid (2.3.7)
@@ -69,4 +74,4 @@ DEPENDENCIES
   rest-client
   ruby_danfe
   savon
-  signer
+  signer!
