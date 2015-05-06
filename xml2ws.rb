@@ -4,6 +4,7 @@ require 'bundler/setup'
 require "signer"
 require "openssl"
 require 'savon'
+require 'base64'
 
 ################################################################################
 
@@ -52,17 +53,23 @@ digest_method_node["Algorithm"] = "http://www.w3.org/2000/09/xmldsig#sha1"
 reference_node.add_child(digest_method_node)
 
 digest_value_node = Nokogiri::XML::Node.new("DigestValue", signer.document.root)
+digest = OpenSSL::Digest::SHA1.digest(signer.document.root)
+digest = Base64.encode64(digest.to_s).gsub(/\n/, '')
+digest_value_node.content = digest
+
 reference_node.add_child(digest_value_node)
 
 signed_info_node.add_child(reference_node)
 signature_node.add_child(signed_info_node)
 
 signature_value_node = Nokogiri::XML::Node.new("SignatureValue", signer.document.root)
+signature_value_node.content = Base64.encode64(signer.private_key.to_der).gsub("\n", '')
 signature_node.add_child(signature_value_node)
 
 key_info_node = Nokogiri::XML::Node.new("KeyInfo", signer.document.root)
 x509_data_node = Nokogiri::XML::Node.new("X509Data", signer.document.root)
 x509_certificate_node = Nokogiri::XML::Node.new("X509Certificate", signer.document.root)
+x509_certificate_node.content = Base64.encode64(signer.cert.to_der).gsub("\n", '')
 x509_data_node.add_child(x509_certificate_node)
 key_info_node.add_child(x509_data_node)
 signature_node.add_child(key_info_node)
