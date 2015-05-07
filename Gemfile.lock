@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:henriquenm/signer.git
-  revision: 93b57715038170dcd7ff4f3943acdb78e4c3f27d
+  revision: 347e36aee0a95f7e61221bff1d69e78b9af5b587
   specs:
     signer (1.4.2)
       nokogiri (>= 1.5.1)

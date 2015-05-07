@@ -1,21 +1,31 @@
-<root>
-    <Description>
-        <ID>2222</ID>
-        <SubDescription>
-        <subID>4501</subID>
-        </SubDescription>
-        <SubDescription>
-        <subID>4502</subID>
-        </SubDescription>
-    </Description>
-    <Description>
-        <ID>1234</ID>
-        <SubDescription>
-        <subID>4501</subID>
-        </SubDescription>
-        <SubDescription>
-        <subID>4502</subID>
-        <salame>test</salame>
-        </SubDescription>
-    </Description>
-</root>
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <getPoliciesResponse xmlns:ns1="http://policy.api.control.r1soft.com/">
+      <return_test>
+        <CDPId>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx</CDPId>
+        <description/>
+        <diskSafeID>bcb68765-a719-4291-912d-2e6af485ea24</diskSafeID>
+        <enabled>true</enabled>
+        <id>cdb65427-d6f4-4a89-9f77-8763e22dc74b</id>
+        <lastReplicationRunTime>2013-06-12T13:29:40.105-05:00</lastReplicationRunTime>
+        <name>pstueck-passenger ondemand</name>
+        <replicationScheduleFrequencyType>ON_DEMAND</replicationScheduleFrequencyType>
+        <state>OK</state>
+      </return_test>
+      <return>
+        <CDPId>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx</CDPId>
+        <description/>
+        <diskSafeID>e8e13555-f577-40d2-99c8-fa8a019d3b55</diskSafeID>
+        <enabled>true</enabled>
+        <id>7f55f8d6-92a9-4b14-bff4-631559d92259</id>
+        <lastReplicationRunTime>2013-06-16T22:00:04.918-05:00</lastReplicationRunTime>
+        <name>pstueck-mysql daily</name>
+        <nextReplicationRunTime>2013-06-17T22:00:00-05:00</nextReplicationRunTime>
+        <replicationScheduleFrequencyType>DAILY</replicationScheduleFrequencyType>
+        <state>ALERT</state>
+        <warnings>Policy last completed with alerts</warnings>
+      </return>
+    </ns1:getPoliciesResponse>
+  </soap:Body>
+</soap:Envelope>
