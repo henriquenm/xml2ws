@@ -12,11 +12,11 @@
         <mod>65</mod>
         <serie>1</serie>
         <nNF>1</nNF>
-        <dhEmi>2015-05-05T16:57:03-03:00</dhEmi>
+        <dhEmi>2015-05-05T10:44:03-03:00</dhEmi>
         <tpNF>1</tpNF>
         <idDest>1</idDest>
         <cMunFG>5103403</cMunFG>
-        <tpImp>4</tpImp>
+        <tpImp>1</tpImp>
         <tpEmis>1</tpEmis>
         <cDV>3</cDV>
         <tpAmb>2</tpAmb>
@@ -55,6 +55,9 @@
           <xMun>Cuiaba</xMun>
           <UF>MT</UF>
           <CEP>78005500</CEP>
+          <cPais>1058</cPais>
+          <xPais>Brasil</xPais>
+          <fone>6533171555</fone>
         </enderDest>
         <indIEDest>9</indIEDest>
       </dest>

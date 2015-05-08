@@ -22,7 +22,7 @@ signer.digest!(signer.document.root, :id => "NFe51150501882109000162650010000000
 signer.sign!(:issuer_serial => true)
 signed_xml = signer.to_xml
 
-puts signer.document.root
+puts signer.document
 
 File.open("xml_to_sign_signed.xml", 'w') {|f| f.write(signed_xml) }
 
