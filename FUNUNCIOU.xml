@@ -1,28 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
 <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
-  <infNFe Id="NFe51150401882109000162550010000000041784051633" versao="3.10">
+  <infNFe Id="NFe51150401882109000162550010000000051784051690" versao="3.10">
     <ide>
       <cUF>51</cUF>
-      <cNF>78405163</cNF>
+      <cNF>78405169</cNF>
       <natOp>Venda de mercadoria</natOp>
       <indPag>0</indPag>
       <mod>55</mod>
       <serie>1</serie>
-      <nNF>4</nNF>
-      <dhEmi>2015-04-30T12:10:00-03:00</dhEmi>
-      <dhSaiEnt>2015-04-30T12:10:00-03:00</dhSaiEnt>
+      <nNF>5</nNF>
+      <dhEmi>2015-05-12T15:25:00-03:00</dhEmi>
+      <dhSaiEnt>2015-05-12T15:25:00-03:00</dhSaiEnt>
       <tpNF>1</tpNF>
       <idDest>1</idDest>
       <cMunFG>5103403</cMunFG>
       <tpImp>1</tpImp>
       <tpEmis>1</tpEmis>
-      <cDV>3</cDV>
+      <cDV>0</cDV>
       <tpAmb>2</tpAmb>
       <finNFe>1</finNFe>
       <indFinal>1</indFinal>
       <indPres>1</indPres>
       <procEmi>0</procEmi>
-      <verProc>nfemais.com.br v3</verProc>
+      <verProc>NFCelular</verProc>
     </ide>
     <emit>
       <CNPJ>01882109000162</CNPJ>
@@ -135,7 +134,7 @@
       <modFrete>9</modFrete>
     </transp>
     <infAdic>
-      <infCpl>[Trib aprox: Fed R$ 83,82 (13,97%), Est R$ 102,00 (17,00%). Fonte: IBPT/MT - 9oi3aC]</infCpl>
+      <infCpl>description</infCpl>
     </infAdic>
   </infNFe>
 </NFe>
