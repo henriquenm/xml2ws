@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:henriquenm/signer.git
-  revision: ad2ba1d34614aa384b071997f788caa6caceb1bc
+  revision: 1f84bf3a1bc49749df65ac6a1188b789983cf0a3
   branch: debug
   specs:
     signer (1.4.2)
